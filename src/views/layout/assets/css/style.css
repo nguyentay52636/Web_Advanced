@@ -21,7 +21,7 @@ opacity: 2;
     line-height: 40px;
     height: 40px;
     position: fixed;
-    background: #d4b68a;
+    background: rgb(231, 180, 90);
     z-index: 100;
     bottom: 20px;
     right: 20px;
@@ -87,7 +87,7 @@ opacity: 2;
     }
   .quantity-cart  {
     top :20;
-    right: 80;
+    right: 65;
     color : black ; 
     background-color: white;
     padding: 0 7px;
@@ -99,8 +99,8 @@ opacity: 2;
         border-radius: 50%;
         padding: 20px;
         position: absolute;
-        top:10px ;
-        left: 46rem;
+        top:25px ;
+        left: 44rem;
         z-index: 10;
         }
         .collapse {
@@ -114,8 +114,9 @@ opacity: 2;
 
          }
         .nav-item .nav-link {
-          color :white
-         }
+          color :white;
+          margin :0 1rem;
+        }
          .nav-item .nav-link { 
           color: white;
           font-weight: 400;
@@ -127,7 +128,7 @@ opacity: 2;
 
          }
          .nav-item .nav-link:hover {
-          color: #d4b68a;
+          color: rgb(231, 180, 90);
           /* background-color: #d4b68a; */
           /* border-radius: 0.5rem; */
          }
@@ -140,7 +141,7 @@ opacity: 2;
           font-size: 18px;
          } */
       .search-cart .btn-search i {
-        color: #d4b68a;
+        color: rgb(231, 180, 90);
         font-size: 24px;
         padding : 5px;
         border: none;
@@ -148,20 +149,12 @@ opacity: 2;
  
       .search-cart .btn-cart i {
         padding : 5px;
-        color: #d4b68a;
+        color: rgb(231, 180, 90);
 font-size: 24px;
 border: none;
       }
       /* features */
-      .features {
-        background-image: url('https://images.unsplash.com/photo-1612838320302-4b3b3b3b3b3b');
-        background-repeat: no-repeat;
-      background-attachment: fixed;
-        background-size: cover;
-      
-      color: black;
-      backdrop-filter: blur(5px);
-      }
+    
       .features .feature-item{
         margin :2rem 14rem;
       }
@@ -205,7 +198,7 @@ border: none;
       h2 {
         font-size: 30px;
         font-weight: 700;
-        color: #d4b68a;
+        color: rgb(231, 180, 90);
         margin-bottom: 20px;
         text-align: center;
         margin: 50px 0;
@@ -267,18 +260,25 @@ color: #664d03;
   
 }
 .social-icons a i:hover {
-  color: #d4b68a;
+  color: rgb(231, 180, 90);
 }
 .header-right  .btn-login { 
-background-color: #d4b68a;
+background-color: rgb(231, 180, 90);
 }
 .header-right  .btn-signup { 
-  background-color: #d4b68a;
+  background-color: rgb(231, 180, 90);
   }
  h3 > span  {
   margin :10px 0 ; 
 }
-
+.btn-login:hover {
+  background-color: #d4b68a !important;
+  color:white  !important;
+}
+.btn-signup:hover {
+  background-color: #d4b68a !important;
+  color:white  !important;
+}
 .utils-item1 img {
   width: 80px;
   height: 75px;
@@ -296,7 +296,97 @@ background-color: #d4b68a;
   font-size: 18px;
 }
 .line-footer { 
-  border-bottom: 1px solid #d4b68a;
+  border-bottom: 1px solid rgb(231, 180, 90);
   margin: 2rem 3rem;
 
+}
+.h6-style-font { 
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 30px;
+  font-weight: 400;
+  margin :1rem 0 0 0;
+  
+}
+.carousel-item-logo p {
+  white-space: break-spaces;
+  word-wrap: break-word; 
+  margin-right: 8rem;
+}
+
+ .carousel-item-logo{
+  padding-top: 14rem;
+  padding-bottom: 4rem;
+
+}
+.carousel-item-logo img { 
+  width: 16rem;
+  height: 16rem;
+}
+.carousel-item-logo h5 { 
+font-size: 4rem;
+color: white;
+/* margin : 2rem 0; */
+}
+.carousel-item-logo p { 
+  font-size: 20px;
+  color: white;
+}
+.carousel-item-logo .btn { 
+background-color:rgb(231, 180, 90);
+  color: white;
+  border-radius: 0;
+  border: none;
+
+  font-size: 14px;
+  padding: 15px 20px;
+}
+.btn-more:hover {
+  background-color: #d4b68a !important;
+  color: white !important;
+}
+.list-item-left {
+  margin-left: 2rem;
+}
+.features {
+  background-image: url('https://images.unsplash.com/photo-1612838320302-4b3b3b3b3b3b');
+  background-repeat: no-repeat;
+background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+
+color: black;
+backdrop-filter: blur(5px);
+}
+.quotation-icon-style-1 {
+  position: absolute;
+  top: 0 ;
+  right: 0;
+  font-size: 50px;
+}
+.quotation-icon-style-1 {
+  position: absolute;
+  top: 12rem ;
+  left:10rem;
+width: 45px;
+}
+.quotation-icon-style-2 {
+  position: absolute;
+  top: 18em ;
+  right:9rem;
+width: 45px;
+rotate: 180deg;
+}
+/* .quotation-icon-style-2 {
+  position: absolute;
+  bottom: 10 ;
+  left: 10;
+  font-size: 50px;
+}  */
+.quotation-icon-style-1 img {
+  width: 45px;
+}
+.quotation-icon-style-2 img {
+  width: 45px;
 }

@@ -31,91 +31,59 @@
                 <div class="carousel-item-logo text-center">
                     <img
                         src="https://barista.qodeinteractive.com/wp-content/uploads/2017/02/home-1-slider-img.png" alt="Coffee Shop Logo" />
-                    <h5>The Home of Coffee</h5>
+                    <h5>CHÚNG TÔI LÀ </h5>
+                    <h6 class="h6-style-font">Coffee SGU</h6>
                     <p>
-                        Lorem ipsum dolor sit amet, nec ne officiis electram. Dolore
-                        nominati vim et.
+                        Chúng tôi đi khắp thế giới để tìm kiếm cà phê tuyệt vời. Trong quá trình
+                        đó, chúng tôi phát hiện ra những hạt đậu đặc biệt và hiếm đến nỗi chúng
+                        tôi có thể chờ đợi để mang chúng về.
                     </p>
-                    <button class="btn">Read More</button>
+                    <button class="btn btn-more">Read More</button>
                 </div>
             </div>
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item ">
             <img
-                src="https://barista.qodeinteractive.com/wp-content/uploads/2017/01/home-1-parallax-2.jpg"
+                src="https://barista.qodeinteractive.com/wp-content/uploads/2017/01/home1-parallax-1.jpg"
                 class="d-block w-100"
                 alt="Coffee Shop" />
-            <div class="carousel-caption">
-                <div class="carousel-item-logo text-center">
-                    <img
-                        src="https://barista.qodeinteractive.com/wp-content/uploads/2017/02/home-1-slider-img.png"
-                        alt="Coffee Shop Logo" />
-                    <h5>The Home of Coffee</h5>
-                    <p>
-                        Lorem ipsum dolor sit amet, nec ne officiis electram. Dolore
-                        nominati vim et.
-                    </p>
-                    <button class="btn">Read More</button>
-                </div>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <img
-                src="https://barista.qodeinteractive.com/wp-content/uploads/2017/01/home-1-parallax-2.jpg"
-                class="d-block w-100"
-                alt="Coffee Shop" />
-            <div class="carousel-caption">
-                <div class="carousel-item-logo text-center">
-                    <img
-                        src="https://barista.qodeinteractive.com/wp-content/uploads/2017/02/home-1-slider-img.png"
-                        alt="Coffee Shop Logo" />
-                    <h5>The Home of Coffee</h5>
-                    <p>
-                        Lorem ipsum dolor sit amet, nec ne officiis electram. Dolore
-                        nominati vim et.
-                    </p>
-                    <button class="btn">Read More</button>
-                </div>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <img
-                src="https://barista.qodeinteractive.com/wp-content/uploads/2017/01/home-1-blog-f-img-2.jpg"
-                class="d-block w-100"
-                alt="Coffee Shop" />
-            <div class="carousel-caption">
-                <div class="carousel-item-logo text-center">
-                    <img
-                        src="https://barista.qodeinteractive.com/wp-content/uploads/2017/01/coffee-shop-logo.png"
-                        alt="Coffee Shop Logo"
-                        class="" />
-                    <h5>THE HOME OF COFFEE</h5>
-                    <p>
-                        Lorem ipsum dolor sit amet, nec ne officiis electram. Dolore
-                        nominati vim et.
-                    </p>
-                    <button class="btn btn-outline">Read More</button>
-                </div>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <img
-                src="https://barista.qodeinteractive.com/wp-content/uploads/2017/01/coffee-shop-logo.png"
-                alt="Coffee Shop Logo"
-                class="" />
-            <div class="carousel-caption">
+            <div class="carousel-caption py-5">
                 <div class="carousel-item-logo text-center">
                     <img
                         src="https://barista.qodeinteractive.com/wp-content/uploads/2017/02/home-1-slider-img.png" alt="Coffee Shop Logo" />
-                    <h5>The Home of Coffee</h5>
+                    <h5>CHÚNG TÔI LÀ </h5>
+                    <h6 class="h6-style-font">Coffee SGU</h6>
                     <p>
-                        Lorem ipsum dolor sit amet, nec ne officiis electram. Dolore
-                        nominati vim et.
+                        Chúng tôi đi khắp thế giới để tìm kiếm cà phê tuyệt vời.Trong quá trình
+                        đó, chúng tôi phát hiện ra những hạt đậu đặc biệt và hiếm đến nỗi chúng
+                        tôi có thể chờ đợi để mang chúng về.
                     </p>
-                    <button class="btn">Read More</button>
+                    <button class="btn btn-more">Read More</button>
                 </div>
             </div>
         </div>
+        <div class="carousel-item ">
+            <img
+                src="https://barista.qodeinteractive.com/wp-content/uploads/2017/01/home1-parallax-1.jpg"
+                class="d-block w-100"
+                alt="Coffee Shop" />
+            <div class="carousel-caption py-5">
+                <div class="carousel-item-logo text-center">
+                    <img
+                        src="https://barista.qodeinteractive.com/wp-content/uploads/2017/02/home-1-slider-img.png" alt="Coffee Shop Logo" />
+                    <h5>CHÚNG TÔI LÀ </h5>
+                    <h6 class="h6-style-font">Coffee SGU</h6>
+                    <p>
+                        Chúng tôi đi khắp thế giới để tìm kiếm cà phê tuyệt vời. Trong quá trình
+                        đó, chúng tôi phát hiện ra những hạt đậu đặc biệt và hiếm đến nỗi chúng
+                        tôi có thể chờ đợi để mang chúng về.
+                    </p>
+                    <button class="btn btn-more">Read More</button>
+                </div>
+            </div>
+        </div>
+
+
     </div>
     <button
         class="carousel-control-prev"

@@ -19,6 +19,7 @@
             đầu của Châu Âu</h4>
     </div>
 </div>
+<div class="line-footer"></div>
 <footer>
 
     <div class="footer-main">
@@ -63,3 +64,4 @@
             </div>
         </div>
 </footer>
+<a class="back_to_top cd-top text-replace js-cd-top" href="#"><i class="fa fa-angle-up"></i></a>

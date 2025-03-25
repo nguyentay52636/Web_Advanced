@@ -1,6 +1,6 @@
 /* Variables */
 :root {
-    --primary-color: #cc9f83;
+    --primary-color: rgb(231, 180, 90);
   }
   
   /* Base merchandise card styles */
@@ -121,38 +121,12 @@
     padding : 60px 0 ; 
   }
   .feature-item h3 { 
-    color: #d4b68a;
+    color: rgb(231, 180, 90);
   }
   .feature-item p{
-    color: #d4b68a;
+    color: rgb(231, 180, 90);
   }
-  .carousel-item-logo{
-    padding-bottom: 24rem;
-    padding-top: 10rem;
   
-  }
-  .carousel-item-logo img { 
-    width: 16rem;
-    height: 16rem;
-  }
-  .carousel-item-logo h5 { 
-  font-size: 4rem;
-  color: white;
-  margin : 2rem 0;
-  }
-  .carousel-item-logo p { 
-    font-size: 20px;
-    color: white;
-  }
-  .carousel-item-logo .btn { 
-  background-color: #d4b68a;
-    color: white;
-    border-radius: 0;
-    border: none;
-  
-    font-size: 14px;
-    padding: 15px 20px;
-  }
   .row {
     gap: 30px;
   } 
@@ -163,11 +137,11 @@
     font-style: normal;
   }
   .menu-div-h1 { 
-    color : #d4b68a;
+    color : rgb(231, 180, 90);
     font-weight: 800;
   }
   .btn-phantrang button { 
-    background-color: #d4b68a;
+    background-color: rgb(231, 180, 90);
     color : white;
     padding: 18px 55px;
     border-radius: 35px;
