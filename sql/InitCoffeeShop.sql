@@ -1,3 +1,4 @@
+
 DROP DATABASE IF EXISTS `COFFESHOP`;
 
 CREATE DATABASE IF NOT EXISTS `COFFESHOP`;
@@ -15,6 +16,7 @@ CREATE TABLE IF NOT EXISTS `ACCOUNTS` (
 
 
 DROP TABLE IF EXISTS `USERS`;
+
 CREATE TABLE IF NOT EXISTS `USERS` (
     ID                          INT             NOT NULL           AUTO_INCREMENT              ,
     ACCOUNTID                   INT             NOT NULL                                       ,
@@ -42,7 +44,7 @@ CREATE TABLE IF NOT EXISTS  `PRODUCTS` (
 
 DROP TABLE IF EXISTS `RECIPES`;
 CREATE TABLE IF NOT EXISTS `RECIPES` (
-    ID                          INT             NOT NULL           AUTO_INCREMENT              ,
+    `ID`                          INT             NOT NULL           AUTO_INCREMENT              ,
     INFREDIENTID                INT             NOT NULL                                       ,
     QUANTITY                    DOUBLE          NOT NULL                                       ,
     UNITID                      INT             NOT NULL                                       ,
@@ -142,13 +144,19 @@ DROP TABLE IF EXISTS `CARTS`;
 CREATE TABLE IF NOT EXISTS `CARTS` (
     ID                          INT             NOT NULL           AUTO_INCREMENT              ,
     USERID                      INT             NOT NULL                                       ,
-    PRODUCTID                   INT             NOT NULL                                       ,
     QUANTITY                    DOUBLE          NOT NULL                                       ,
     PRIMARY KEY (ID)
 );
 
+DROP TABLE IF EXISTS `CARTDETAILS`;
+CREATE TABLE IF NOT EXISTS `CARTDETAILS` (
+    CARTID                      INT             NOT NULL                                       ,
+    PRODUCTID                   INT             NOT NULL                                       ,
+    QUANTITY                    DOUBLE          NOT NULL                                       
+);
 
 DROP TABLE IF EXISTS `PRODUCTREVIEWS`;
+
 CREATE TABLE IF NOT EXISTS `PRODUCTREVIEWS` (
     ID                          INT             NOT NULL           AUTO_INCREMENT              ,
     USERID                      INT             NOT NULL                                       ,
@@ -186,8 +194,12 @@ ALTER TABLE `ORDERDETAILS`
  ADD CONSTRAINT `FK_DISCOUNTS_ORDERS` FOREIGN KEY (DISCOUNTID) REFERENCES DISCOUNTS(ID);
 
  ALTER TABLE `CARTS`
- ADD CONSTRAINT `FK_USERS_CARTS` FOREIGN KEY (USERID) REFERENCES USERS(ID),
- ADD CONSTRAINT `FK_PRODUCTS_CARTS` FOREIGN KEY (PRODUCTID) REFERENCES PRODUCTS(ID);
+ ADD CONSTRAINT `FK_USERS_CARTS` FOREIGN KEY (USERID) REFERENCES USERS(ID);
+
+
+ ALTER TABLE `CARTDETAILS`
+ ADD CONSTRAINT `FK_CARTS` FOREIGN KEY (CARTID) REFERENCES CARTS(ID),
+ ADD CONSTRAINT `FK_PRODUCTS_CARTDETAILS` FOREIGN KEY (PRODUCTID) REFERENCES PRODUCTS(ID);
 
  ALTER TABLE `USERS` 
  ADD CONSTRAINT `FK_ACCOUNTS` FOREIGN KEY (ACCOUNTID) REFERENCES ACCOUNTS(ID);
