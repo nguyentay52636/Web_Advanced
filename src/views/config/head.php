@@ -6,6 +6,8 @@
         name="viewport"
         content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link rel="stylesheet" href="../layout/assets/css/style.css">
+    <link rel="stylesheet" href="../layout/assets/css/cart.css">
+
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css" />
     <!-- Slick Carousel Theme CSS (nếu cần) -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css" />

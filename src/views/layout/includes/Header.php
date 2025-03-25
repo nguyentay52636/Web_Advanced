@@ -1,6 +1,6 @@
 <header>
     <div class="container-header">
-        <div class="header-top py-4">
+        <div class="header-top">
             <div class="header-left">
                 <span>Chào mừng bạn đến với coffee SGU</span>
                 <div class="social-icons">

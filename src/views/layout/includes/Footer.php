@@ -1,4 +1,26 @@
+<div class="line-footer"></div>
+<div class="utilities d-flex justify-content-around">
+    <div class="utils-item1 d-flex justify-content-center align-items-center">
+        <img src="https://s3-alpha-sig.figma.com/img/b356/d33c/da9d5c6050b80da0e6a63f16a94e9297?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=ppr-PvIrQklj1NKiZJNwkD66iuj6xqt5n6YO2ATMtwH6u5JQvFrMrBshK4VklJpKDoCez2VH-Qbi-~5RPhOx~c10iCQFI4tSYaN76FRbXKNuBpSZpmLMQOKINUfXOrAdI9AAhhnlKmYpNtXNk3Zk1w7RhQm080Bc71SiTaGDPx~rZZPa7MWb7j-vDhRusJvmrqSehwxohjCsqaAgvM6wVbzz~h~9zocdEfXPSJagCMlfKW1J5lskUpmH6sTIRImo9H5UMt~ai2lNR~4gkbVvE-B1CZSYKjL2rNerH5LxITNrNTZtD3PYPo~He3kf5q9ZowleEfS-eU1xWQ2bpbh3JA__" alt="">
+        <h4 class="text-dark">
+            Coffee chất lượng hàng
+            đầu của Châu Âu</h4>
+    </div>
+    <div class="utils-item1 d-flex justify-content-center align-items-center">
+        <img src="https://www.figma.com/file/1yYJ3fgLf9u0Fi9HWpGnUG/image/502212a9ac7c89cca6c11bf9b6b1bd0d90c09c7d" alt="">
+        <h4 class="text-dark">
+            Coffee chất lượng hàng
+            đầu của Châu Âu</h4>
+    </div>
+    <div class="utils-item1 d-flex justify-content-center align-items-center">
+        <img src="https://s3-alpha-sig.figma.com/img/fa81/45c8/fc590866c89b37980fe288856d4ddabd?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=oWPQKX4RjyuMMqgGjZf97TmlsnUX8nEQ7NnRa0bvXrKZxjII~vF6x3lWjSLwFtchqZRMbtihXHeWN62MgRAwl-gvSvF1x4ntj1zWrP1owm2WqVxjVCn4chT5Pgs5fh9L1uVZb0QqQynuB9cRP4k72jxZHV6o~Unza-p67gr8E5xjDPTmRzBcCPIt~XPRapN2cCSaZCGy3vEoL1PMpjkNAfiTA-ihC2RUlUpsAtD40a69YrhTR7g2b5N2e8Lv8nFHSiGylLSnHNzYzHQjZmsAllHHtAGRWbZev96HKz1jJU7U4bG5ZdOQvLBx6R9ji6P~lCC~C957gTJMe~EbDRbOhg__" alt="">
+        <h4 class="text-dark">
+            Coffee chất lượng hàng
+            đầu của Châu Âu</h4>
+    </div>
+</div>
 <footer>
+
     <div class="footer-main">
         <div class="footer-top d-flex justify-content-center gap-5 ">
             <div class="">

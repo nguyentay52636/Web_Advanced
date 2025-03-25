@@ -16,7 +16,7 @@
             </div>
             <!-- Main Image -->
 
-            <div class="br"></div>
+            <div class="line-footer"></div>
             <div class="slick-features">
                 <div class="features">
                     <div class="main-image">
