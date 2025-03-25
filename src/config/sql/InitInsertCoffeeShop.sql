@@ -28,11 +28,22 @@ INSERT INTO `INGREDIENTS` (`PRODUCERID`, `INGREDIENTNAME`, `QUANTITY`, `UNITID`)
 (2, 'Sugar', 50, 1), -- 50 kg
 (3, 'Chocolate Syrup', 200, 3); -- 200 ml
 
-INSERT INTO `RECIPES` (`INFREDIENTID`, `QUANTITY`, `UNITID`) VALUES
-(1, 20, 2), -- 20 g Coffee Beans
-(2, 150, 3), -- 150 ml Milk
-(3, 10, 2), -- 10 g Sugar
-(4, 30, 3); -- 30 ml Chocolate Syrup
+INSERT INTO `RECIPES` (`RECIPENAME`) VALUES
+('Espresso'),
+('Latte'),
+('Americano'),
+('Mocha');
+
+INSERT INTO `RECIPEDETAILS` (`RECIPEID`, `INGREDIENTID`, `QUANTITY`, `UNITID`) VALUES
+(1, 1, 100, 1), -- 100 kg
+(1, 2, 500, 3), -- 500 ml
+(2, 1, 200, 1), -- 200 kg(2, 2, 1000, 3), -- 1000 ml
+(3, 1, 50, 1), -- 50 kg
+(3, 2, 250, 3), -- 250 ml
+(4, 1, 150, 1), -- 150 kg
+(4, 2, 750, 3), -- 750 ml
+(4, 3, 25, 1), -- 25 kg
+(4, 4, 125, 3); -- 125 ml
 
 INSERT INTO `PRODUCTS` (`RECIPEID`, `PRODUCTNAME`, `PRICE`, `UNITID`) VALUES
 (1, 'Espresso', 3.50, 4), -- pcs
@@ -58,10 +69,10 @@ INSERT INTO `DISCOUNTS` (`DISCOUNTNAME`, `DISCOUNTPERCENT`, `REQUIREMENT`, `STAR
 ('Summer Sale', 10, 20, '2023-06-01', '2023-08-31'),
 ('Winter Deal', 15, 30, '2023-12-01', '2023-12-31');
 
-INSERT INTO `ORDERS` (`USERID`, `TOTAL`, `DATEOFORDER`, `DISCOUNTID`) VALUES
-(1, 10, '2023-10-26', 1),
-(2, 15, '2023-10-27', 2),
-(3, 20, '2023-10-28', 1);
+INSERT INTO `ORDERS` (`USERID`, `TOTAL`, `DATEOFORDER`, `ORDERSTATUS`, `DISCOUNTID`) VALUES
+(1, 7, '2023-10-26', 'Pending', 1),
+(2, 13.50, '2023-10-27', 'Completed', 2),
+(3, 3.50, '2023-10-28', 'Pending', 1);
 
 INSERT INTO `ORDERDETAILS` (`ORDERID`, `PRODUCTID`, `QUANTITY`, `PRICE`, `TOTAL`) VALUES
 (1, 1, 2, 3.50, 7),

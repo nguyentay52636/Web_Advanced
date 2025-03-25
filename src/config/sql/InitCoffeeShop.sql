@@ -44,11 +44,19 @@ CREATE TABLE IF NOT EXISTS  `PRODUCTS` (
 
 DROP TABLE IF EXISTS `RECIPES`;
 CREATE TABLE IF NOT EXISTS `RECIPES` (
-    `ID`                          INT             NOT NULL           AUTO_INCREMENT              ,
-    INFREDIENTID                INT             NOT NULL                                       ,
+    `ID`                        INT             NOT NULL           AUTO_INCREMENT              ,
+    RECIPENAME                  VARCHAR(50)     NOT NULL                                       ,
+
+    PRIMARY KEY (`ID`)
+);
+
+DROP TABLE IF EXISTS `RECIPEDETAILS`;
+
+CREATE TABLE IF NOT EXISTS `RECIPEDETAILS` (
+    RECIPEID                    INT             NOT NULL                                       ,
+    INGREDIENTID                INT             NOT NULL                                       ,
     QUANTITY                    DOUBLE          NOT NULL                                       ,
-    UNITID                      INT             NOT NULL                                       ,
-    PRIMARY KEY (ID)
+    UNITID                      INT             NOT NULL                                       
 );
 
 
@@ -107,11 +115,12 @@ CREATE TABLE IF NOT EXISTS `IMPORTDETAILS` (
 
 DROP TABLE IF EXISTS `ORDERS`; 
 CREATE TABLE IF NOT EXISTS `ORDERS` (
-    ID                          INT             NOT NULL           AUTO_INCREMENT              ,
-    USERID                      INT             NOT NULL                                       ,
-    TOTAL                       DOUBLE          NOT NULL                                       ,
-    DATEOFORDER                 DATE            NOT NULL                                       ,
-    DISCOUNTID                  INT             NOT NULL                                       ,
+    ID                          INT             NOT NULL           AUTO_INCREMENT                        ,
+    USERID                      INT             NOT NULL                                                 ,
+    TOTAL                       DOUBLE          NOT NULL                                                 ,
+    DATEOFORDER                 DATE            NOT NULL                                                 ,
+    ORDERSTATUS                 ENUM('PENDING', 'COMPLETED', 'CANCELLED') NOT NULL DEFAULT 'PENDING'     ,
+    DISCOUNTID                  INT             NOT NULL                                                 ,
     PRIMARY KEY (ID)
 );
 
@@ -173,9 +182,9 @@ ALTER TABLE `PRODUCTS`
 ADD CONSTRAINT `FK_RECIPES` FOREIGN KEY (RECIPEID) REFERENCES RECIPES(ID),
 ADD CONSTRAINT `FK_UNITS_PRODUCTS` FOREIGN KEY (UNITID) REFERENCES UNITS(ID);
 
-ALTER TABLE `RECIPES`
- ADD CONSTRAINT `FK_INGREDIENTS_RECIPES` FOREIGN KEY (INFREDIENTID) REFERENCES INGREDIENTS(ID), 
- ADD CONSTRAINT `FK_UNITS_RECIPES` FOREIGN KEY (UNITID) REFERENCES UNITS(ID);
+ALTER TABLE `RECIPEDETAILS`
+ ADD CONSTRAINT `FK_RECIPES_RECIPEDETAILS` FOREIGN KEY (RECIPEID) REFERENCES RECIPES(ID),
+ ADD CONSTRAINT `FK_INGREDIENTS_RECIPEDETAILS` FOREIGN KEY (INGREDIENTID) REFERENCES INGREDIENTS(ID);
  
 ALTER TABLE `INGREDIENTS`
  ADD CONSTRAINT `FK_PRODUCERS` FOREIGN KEY (PRODUCERID) REFERENCES PRODUCERS(ID),

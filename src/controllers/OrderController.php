@@ -1,122 +1,56 @@
 <?php
 
-require_once 'config/DatabaseConnection.php';
-require_once 'models/Order.php'; // Đảm bảo bạn đã bao gồm file Order.php
+require_once './../models/Order.php';
+require_once '../config/DatabaseConnection.php';
 
 class OrderController {
-    private $dbConnection;
+    private $conn;
 
     public function __construct() {
-        $this->dbConnection = new DatabaseConnection();
+        $db = new DatabaseConnection();
+        $this->conn = $db->getConnection();
     }
 
-    public function createOrder(Order $order) {
-        $conn = $this->dbConnection->getConnection();
-
-        $userId = $order->getUserId();
-        $total = $order->getTotal();
-        $dateOfOrder = $order->getDateOfOrder();
-        $discountId = $order->getDiscountId();
-
+    public function createOrder($userId, $total, $dateOfOrder, $discountId) {
         $sql = "INSERT INTO ORDERS (USERID, TOTAL, DATEOFORDER, DISCOUNTID) VALUES (?, ?, ?, ?)";
-        $stmt = $conn->prepare($sql);
+        $stmt = $this->conn->prepare($sql);
         $stmt->bind_param("idss", $userId, $total, $dateOfOrder, $discountId);
 
         if ($stmt->execute()) {
-            $order->setId($conn->insert_id); // Lấy ID vừa được tạo
-            $stmt->close();
-            return $order;
+            return new Order($this->conn->insert_id, $userId, $total, $dateOfOrder, 'PENDING', $discountId); // Mặc định trạng thái là PENDING
         } else {
-            $stmt->close();
-            return null; // Hoặc throw exception
+            return null;
         }
     }
 
-    public function getOrderById($id) {
-        $conn = $this->dbConnection->getConnection();
-
+    public function getOrder($id) {
         $sql = "SELECT * FROM ORDERS WHERE ID = ?";
-        $stmt = $conn->prepare($sql);
+        $stmt = $this->conn->prepare($sql);
         $stmt->bind_param("i", $id);
         $stmt->execute();
         $result = $stmt->get_result();
 
         if ($result->num_rows > 0) {
             $row = $result->fetch_assoc();
-            $order = new Order(
-                $row['ID'],
-                $row['USERID'],
-                $row['TOTAL'],
-                $row['DATEOFORDER'],
-                $row['DISCOUNTID']
-            );
-            $stmt->close();
-            return $order;
+            return new Order($row['ID'], $row['USERID'], $row['TOTAL'], $row['DATEOFORDER'], $row['ORDERSTATUS'], $row['DISCOUNTID']);
         } else {
-            $stmt->close();
             return null;
         }
     }
 
-    public function updateOrder(Order $order) {
-        $conn = $this->dbConnection->getConnection();
-
-        $id = $order->getId();
-        $userId = $order->getUserId();
-        $total = $order->getTotal();
-        $dateOfOrder = $order->getDateOfOrder();
-        $discountId = $order->getDiscountId();
-
-        $sql = "UPDATE ORDERS SET USERID = ?, TOTAL = ?, DATEOFORDER = ?, DISCOUNTID = ? WHERE ID = ?";
-        $stmt = $conn->prepare($sql);
-        $stmt->bind_param("idssi", $userId, $total, $dateOfOrder, $discountId, $id);
+    public function updateOrderStatus($id, $status) {
+        $sql = "UPDATE ORDERS SET ORDERSTATUS = ? WHERE ID = ?";
+        $stmt = $this->conn->prepare($sql);
+        $stmt->bind_param("si", $status, $id);
 
         if ($stmt->execute()) {
-            $stmt->close();
-            return $order;
-        } else {
-            $stmt->close();
-            return null;
-        }
-    }
-
-    public function deleteOrder($id) {
-        $conn = $this->dbConnection->getConnection();
-
-        $sql = "DELETE FROM ORDERS WHERE ID = ?";
-        $stmt = $conn->prepare($sql);
-        $stmt->bind_param("i", $id);
-
-        if ($stmt->execute()) {
-            $stmt->close();
             return true;
         } else {
-            $stmt->close();
             return false;
         }
     }
 
-    public function getAllOrders() {
-        $conn = $this->dbConnection->getConnection();
-
-        $sql = "SELECT * FROM ORDERS";
-        $result = $conn->query($sql);
-
-        $orders = [];
-        if ($result->num_rows > 0) {
-            while ($row = $result->fetch_assoc()) {
-                $order = new Order(
-                    $row['ID'],
-                    $row['USERID'],
-                    $row['TOTAL'],
-                    $row['DATEOFORDER'],
-                    $row['DISCOUNTID']
-                );
-                $orders[] = $order;
-            }
-        }
-        return $orders;
-    }
+    // Thêm các phương thức khác như updateOrder, deleteOrder nếu cần
 }
 
 ?>
