@@ -1,0 +1,278 @@
+body {
+  color: white;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+header.nav-fixed {
+    padding: 0px;
+opacity: 2;
+    height: 80px;
+    border-bottom: none;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
+  }
+  .back_to_top i {
+    color: white;
+    font-size: 16px;
+    width: 40px;
+    line-height: 40px;
+    height: 40px;
+    position: fixed;
+    background: #d4b68a;
+    z-index: 100;
+    bottom: 20px;
+    right: 20px;
+    text-align: center;
+    border-radius: 35px;
+    border:none;
+}
+.logo-div img {
+    width: 10rem ;
+    }
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: gray; /* Dark brown background from the image */
+      color: black; /* White text */
+      padding: 10px 20px;
+      height: 40px; /* Approximate height based on the image */
+    }.header-left, .header-right {
+      display: flex;
+      align-items: center;
+    }
+    
+    .header-left span, .header-right a {
+      margin: 0 15px;
+      position: relative;
+    }
+    
+    /* Vertical separators */
+    .header-left span:not(:last-child)::after,
+    .header-right a:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      right: -15px;
+      top: 50%;
+      transform: translateY(-50%);
+      height: 20px;
+      width: 1px;
+      background-color: #fff;
+      opacity: 0.5;
+    }
+    
+    /* Social media icons */
+    .social-icons {
+      display: flex;
+      align-items: center;
+    }
+    
+    .social-icons a {
+      margin: 0 8px;
+      /* color: #fff; */
+      text-decoration: none;
+      font-size: 16px;
+    }
+    .navbar {
+        margin :0 10rem ; 
+        background-color: rgb(37, 37, 37);
+    }
+    .container-fluid {
+      /* background: black; */
+    }
+  .quantity-cart  {
+    top :20;
+    right: 80;
+    color : black ; 
+    background-color: white;
+    padding: 0 7px;
+    border-radius: 50%;
+  }
+    .image-logo img {
+        background-color: #212529;
+        
+        border-radius: 50%;
+        padding: 20px;
+        position: absolute;
+        top:10px ;
+        left: 46rem;
+        z-index: 10;
+        }
+        .collapse {
+            border-radius: 50px;
+            margin:6px 0 ;
+            /* background-color: red; */
+            padding: auto;
+        }
+         * {
+          box-sizing: border-box;
+
+         }
+        .nav-item .nav-link {
+          color :white
+         }
+         .nav-item .nav-link { 
+          color: white;
+          font-weight: 400;
+          /* padding: 0.5rem 1rem; */
+          /* margin: 0 0.25rem; */
+          /* border-radius: 0.5rem; */
+          transition: all 0.3s ease;
+          cursor: pointer;
+
+         }
+         .nav-item .nav-link:hover {
+          color: #d4b68a;
+          /* background-color: #d4b68a; */
+          /* border-radius: 0.5rem; */
+         }
+         .list-item-right {
+          margin-left:18rem ;
+         }
+       
+         /* .btn-search i { 
+          color: #d4b68a;
+          font-size: 18px;
+         } */
+      .search-cart .btn-search i {
+        color: #d4b68a;
+        font-size: 24px;
+        padding : 5px;
+        border: none;
+      }
+ 
+      .search-cart .btn-cart i {
+        padding : 5px;
+        color: #d4b68a;
+font-size: 24px;
+border: none;
+      }
+      /* features */
+      .features {
+        background-image: url('https://images.unsplash.com/photo-1612838320302-4b3b3b3b3b3b');
+        background-repeat: no-repeat;
+      background-attachment: fixed;
+        background-size: cover;
+      
+      color: black;
+      backdrop-filter: blur(5px);
+      }
+      .features .feature-item{
+        margin :2rem 14rem;
+      }
+      .slick-features {
+        display: block !important;
+        visibility: visible !important;
+      }
+      .list-image img{
+        width: 80px;
+      
+      }
+      /* .list-image .image-girl {
+        width: 70px;
+        height: 70px;
+      } */
+      .list-image .image-girl img {
+        width: 70px;
+        height: 70px;
+        border-radius: 100%;
+      }
+      /* feedback */
+      .main-image img{
+      width: 200px;
+      height: 200px;
+      border-radius: 100%;
+      
+      }
+      .main-image {
+        text-align: center;
+      margin-top: 60px;
+      margin-bottom: 30px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      }
+      .line{
+        line-height: 2px;
+        font-size: 10px;
+        text-decoration: 30px;
+      }
+      h2 {
+        font-size: 30px;
+        font-weight: 700;
+        color: #d4b68a;
+        margin-bottom: 20px;
+        text-align: center;
+        margin: 50px 0;
+      }
+      .footer-main {
+        background-image:  url('../images/footer-lg.png');
+        z-index: 2;
+        background-position-y: top;
+        position: relative;
+        padding: 3rem 0;
+      }
+      .footer-top {
+        margin-top: 200px;
+      }
+  .contact-top {
+    margin-bottom:  4rem ;
+  }
+
+  .bottom-menu-right {
+    list-style: none;
+    margin :0 4rem; 
+  }
+  ul {
+list-style: none;
+padding-left: 0 !important;
+font-weight: 200;
+  }
+  ul li { 
+  margin :14px 0 ;
+  padding-left: 0;
+  }
+  h4 {
+    font-weight: 500;
+  }
+  span {
+    font-weight: 100;
+
+  }
+  p > i {
+    font-size: 20px;
+   
+  }
+  p > span {
+    margin-left: 10px;
+
+  }
+.container-header  {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  top: 0;
+}
+.feature-item >  p {
+text-align: center;
+color: #664d03;
+}
+.header-left > span  {
+  font-weight: 400;
+  
+}
+.social-icons a i:hover {
+  color: #d4b68a;
+}
+.header-right  .btn-login { 
+background-color: #d4b68a;
+}
+.header-right  .btn-signup { 
+  background-color: #d4b68a;
+  }
+ h3 > span  {
+  margin :10px 0 ; 
+}
