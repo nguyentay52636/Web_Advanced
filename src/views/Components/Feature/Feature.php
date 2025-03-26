@@ -2,7 +2,7 @@
     <section class="testimonial-section">
         <div class="container text-dark">
             <!-- Header -->
-            <h2>KHÁCH HÀNG NÓI GÌ</h2>
+            <h2 class="title-feature">KHÁCH HÀNG NÓI GÌ</h2>
 
             <!-- Customer Images -->
             <div class="list-image d-flex justify-content-center gap-4">
