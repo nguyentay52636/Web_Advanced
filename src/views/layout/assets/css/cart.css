@@ -154,3 +154,34 @@
     color : white;
 
   }
+
+  /* search input  */
+  .search-container {
+    position: relative;
+    width: 100%;
+  
+}
+
+.search-input {
+    width: 100%;
+    padding: 12px 40px 12px 20px; /* Space for the icon on the right */
+    border: none;
+    border-radius: 50px;
+    font-size: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+    outline: none;
+}
+
+.search-input::placeholder {
+    color: #6c757d; /* Placeholder text color */
+    font-weight: 500;
+}
+
+.search-icon {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6c757d; /* Icon color */
+    font-size: 24px;
+}

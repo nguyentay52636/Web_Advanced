@@ -1,6 +1,10 @@
 body {
   color: white;
 }
+.header-left span {
+    font-weight: 400;
+    color: white;
+}
 * {
   margin: 0;
   padding: 0;
@@ -100,7 +104,7 @@ opacity: 2;
         padding: 20px;
         position: absolute;
         top:25px ;
-        left: 44rem;
+        left: 50rem;
         z-index: 10;
         }
         .collapse {
@@ -161,6 +165,7 @@ border: none;
       .slick-features {
         display: block !important;
         visibility: visible !important;
+        height: 500px !important;
       }
       .list-image img{
         width: 80px;
@@ -390,3 +395,117 @@ rotate: 180deg;
 .quotation-icon-style-2 img {
   width: 45px;
 }
+
+
+.pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .page-item {
+            margin: 0 5px;
+        }
+
+      .page-item  .page-link {
+      border-radius: 50%;
+            color: #000;
+            font-size: 16px;
+      padding: 14px 22px;;
+            transition: all 0.3s ease;
+            font-weight: 200;
+        }
+
+        .page-item.active .page-link {
+            background-color: #000;
+
+            border-radius: 50%;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn-previous, .btn-next {
+            display: flex;
+            align-items: center;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+
+        .btn-previous i, .btn-next i {
+            color: black;
+            font-size: 24px;
+        }
+        
+        .btn-previous span, .btn-next span {
+            color: black !important;
+            font-size: 20px;
+            font-weight: 200; 
+            margin: 0 10px;
+        }
+
+    
+
+
+
+        /* phantrang  */
+        .pagination-div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .page-item {
+            margin: 10px 20px;
+        }
+
+        .page-link {
+            border: none;
+            background: none;
+            color: #000;
+            font-size: 16px;
+            padding: 14px 22px ;
+            transition: all 0.3s ease;
+        }
+
+   .btn-previous.active .page-link {
+    background-color:rgb(231, 180, 90);
+    border-radius: 50%;
+    padding: 14px 22px ;
+    font-size: 16px;
+    color :white;
+    transition: all 0.3s ease;
+   }
+   .page-item-previous .btn-previous , .page-item-next .btn-next{
+    margin: 0 30px;
+    background-color: transparent;
+    border: none;
+    padding: 10px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   }
+   .page-item-previous .btn-previous:hover  { 
+    background-color: #d4b68a;
+    color: white;
+    border: none;
+
+   }
+   .page-item-next .btn-next:hover {
+    background-color: #d4b68a;
+    color: white;
+    border: none;
+   }
+   .title-feature {
+    font-size: 40px;
+    font-weight: 700;
+    color: rgb(231, 180, 90);
+    margin-bottom: 20px;
+    text-align: center;
+    margin: 30px 0;
+   }
