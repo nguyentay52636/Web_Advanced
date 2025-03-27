@@ -20,7 +20,7 @@
         }
     </script>
     <!-- //Meta-Tags -->
-  
+
 
     <!-- Style -->
     <link rel="stylesheet" href="../layout/assets/css/login.css" type="text/css" media="all">
@@ -36,75 +36,75 @@
 
 <body>
 
-<div class="main-form">
-    <div class="bg-image-form">
-        <img src="../layout/assets/images/logo-auth.png" alt="">
-    </div>
-    <!-- <h2>Login Form</h2> -->
-    <div class="w3layoutscontaineragileits">
-<div class="logo-icon">  
-     <img src="https://coffee-shop-website-ht-cs-js-ta.netlify.app/Images/Coffee-logo.png" alt="">
-</div>
-        <form action="#" method="post">
-            <input type="text" Name="username" placeholder="Tên tài khoản của bạn" required="">
-            <input type="password" Name="Mật khẩu" placeholder="Nhập mật khẩu của bạn" required="">
-            <input type="password" Name="Mật khẩu" placeholder="Nhập lại mật khẩu của bạn" required="">
-            <ul class="agileinfotickwthree">
-                <li>
-                    <input type="checkbox" id="brand1" value="">
-                    <label for="brand1"><span></span>Remember me</label>
-                    <a href="#">Forgot password?</a>
-                </li>
-            </ul>
-            <div class="aitssendbuttonw3ls">
-                <input type="submit" value="Đăng ký">
-                <p> To register new account <span>→</span> <a class="w3_play_icon1" href="#small-dialog1"> Click Here</a></p>
-                <div class="clear"></div>
+    <div class="main-form">
+        <div class="bg-image-form">
+            <img src="../layout/assets/images/logo-auth.jpg" alt="">
+        </div>
+        <!-- <h2>Login Form</h2> -->
+        <div class="w3layoutscontaineragileits">
+            <div class="logo-icon">
+                <img src="https://coffee-shop-website-ht-cs-js-ta.netlify.app/Images/Coffee-logo.png" alt="">
             </div>
-        </form>
-    </div>
+            <form action="#" method="post">
+                <input type="text" Name="username" placeholder="Tên tài khoản của bạn" required="">
+                <input type="password" Name="Mật khẩu" placeholder="Nhập mật khẩu của bạn" required="">
+                <input type="password" Name="Mật khẩu" placeholder="Nhập lại mật khẩu của bạn" required="">
+                <ul class="agileinfotickwthree">
+                    <li>
+                        <input type="checkbox" id="brand1" value="">
+                        <label for="brand1"><span></span>Remember me</label>
+                        <a href="#">Forgot password?</a>
+                    </li>
+                </ul>
+                <div class="aitssendbuttonw3ls">
+                    <input type="submit" value="Đăng ký">
+                    <p> Bạn đã có tài khoản ? <span>→</span> <a class="w3_play_icon1" href="../Auth/Login.php"> Đăng nhập ngay !</a></p>
+                    <div class="clear"></div>
+                </div>
+            </form>
+        </div>
 
-    <!-- for register popup -->
-    <div id="small-dialog1" class="mfp-hide">
-        <div class="contact-form1">
-            <div class="contact-w3-agileits">
-                <h3>Register Form</h3>
-                <form action="#" method="post">
-                    <div class="form-sub-w3ls">
-                        <input placeholder="User Name" type="text" required="">
-                        <div class="icon-agile">
-                            <i class="fa fa-user" aria-hidden="true"></i>
+        <!-- for register popup -->
+        <div id="small-dialog1" class="mfp-hide">
+            <div class="contact-form1">
+                <div class="contact-w3-agileits">
+                    <h3>Register Form</h3>
+                    <form action="#" method="post">
+                        <div class="form-sub-w3ls">
+                            <input placeholder="User Name" type="text" required="">
+                            <div class="icon-agile">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-sub-w3ls">
-                        <input placeholder="Email" class="mail" type="email" required="">
-                        <div class="icon-agile">
-                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        <div class="form-sub-w3ls">
+                            <input placeholder="Email" class="mail" type="email" required="">
+                            <div class="icon-agile">
+                                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-sub-w3ls">
-                        <input placeholder="Password" type="password" required="">
-                        <div class="icon-agile">
-                            <i class="fa fa-unlock-alt" aria-hidden="true"></i>
+                        <div class="form-sub-w3ls">
+                            <input placeholder="Password" type="password" required="">
+                            <div class="icon-agile">
+                                <i class="fa fa-unlock-alt" aria-hidden="true"></i>
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-sub-w3ls">
-                        <input placeholder="Confirm Password" type="password" required="">
-                        <div class="icon-agile">
-                            <i class="fa fa-unlock-alt" aria-hidden="true"></i>
+                        <div class="form-sub-w3ls">
+                            <input placeholder="Confirm Password" type="password" required="">
+                            <div class="icon-agile">
+                                <i class="fa fa-unlock-alt" aria-hidden="true"></i>
+                            </div>
                         </div>
-                    </div>
-                    <div class="login-check">
-                        <label class="checkbox"><input type="checkbox" name="checkbox" checked="">I Accept Terms & Conditions</label>
-                    </div>
-                    <div class="submit-w3l">
-                        <input type="submit" value="Register">
-                    </div>
-                </form>
+                        <div class="login-check">
+                            <label class="checkbox"><input type="checkbox" name="checkbox" checked="">I Accept Terms & Conditions</label>
+                        </div>
+                        <div class="submit-w3l">
+                            <input type="submit" value="Register">
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
 
     <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>

@@ -90,12 +90,13 @@ opacity: 2;
       /* background: black; */
     }
   .quantity-cart  {
-    top :20;
-    right: 65;
+    top :20px;
+    right: 70px;
     color : black ; 
     background-color: white;
-    padding: 0 7px;
+    padding: 0 8px;
     border-radius: 50%;
+
   }
     .image-logo img {
         background-color: #212529;
@@ -104,7 +105,7 @@ opacity: 2;
         padding: 20px;
         position: absolute;
         top:25px ;
-        left: 50rem;
+        left: 51.5rem;
         z-index: 10;
         }
         .collapse {
@@ -508,4 +509,9 @@ rotate: 180deg;
     margin-bottom: 20px;
     text-align: center;
     margin: 30px 0;
+   }
+   .main-content {
+    padding: 10rem 0;
+    
+
    }
