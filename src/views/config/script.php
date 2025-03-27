@@ -21,6 +21,37 @@
         }
     });
 </script>
+</body>
+<script>
+    const mithSignupButton = document.getElementById('mith-signup-btn');
+    const lythLoginButton = document.getElementById('lyth-login-btn');
+    const qwixBox = document.getElementById('qwix-box');
+
+    mithSignupButton.addEventListener('click', () => {
+        qwixBox.classList.add("vorn-right-active");
+    });
+
+    lythLoginButton.addEventListener('click', () => {
+        qwixBox.classList.remove("vorn-right-active");
+    });
+
+    // Toggle password visibility
+    document.querySelectorAll('.toggle-password').forEach(eye => {
+        eye.addEventListener('click', function() {
+            const passwordInput = this.previousElementSibling;
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                this.classList.remove('fa-eye');
+                this.classList.add('fa-eye-slash');
+            } else {
+                passwordInput.type = 'password';
+                this.classList.remove('fa-eye-slash');
+                this.classList.add('fa-eye');
+            }
+        });
+    });
+</script>
+</script>
 <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
     integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"

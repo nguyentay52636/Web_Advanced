@@ -1,13 +1,13 @@
-<header>
+<header class="z-index-100">
     <div class="container-header">
         <div class="header-top">
             <div class="header-left">
                 <span>Chào mừng bạn đến với coffee SGU</span>
                 <div class="social-icons">
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#" class="social"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-tiktok"></i></a>
                 </div>
             </div>
             <div class="header-right">
@@ -29,10 +29,7 @@
             </div>
         </div>
         <div class="container-fluid">
-            <div class="image-logo">
-                <!-- <img src="../assets/images/logo_coffee.png" lt=""> -->
-                <img src="https://s3-alpha-sig.figma.com/img/07a6/ba17/2ce4b94025b32b1fec0a34927f223d17?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=rQ9fDZ-pcqPGbOEiVRRjTT7udH9BsJPxcR9YzpIc07KYFlCan28-fjqpiQ5cdk24QTHinQmi2yJqtheKmiEIL-PuJdfVIoKvLb1jqAF5PTPk~bUNpwIryy1X~EOQQPon50fxY6ZeFk4wIpJeP4wpCCj9q~aoe8yuBmVJbk2ox3lidA0o~zxlf0oWxwFtaYtS7tj4ANVWs~eAip--elBdm0cXsDvYQqOdGmV6pF6CQ4p6JO0NRpX3w0Kl~mgBpeUSlkpQ05ext46f0s8DCnMZ8bPSJ0rbVSRv4gNYcEeRcrCtoj8Amm8NFmowuuS~K5ghfIpnaYAo29apWBUCcdwrSA__" alt="">
-            </div>
+
 
             <nav class="navbar navbar-expand-lg  bg-dark position-relative rounded rounded-pill p-2">
 
@@ -43,7 +40,7 @@
                     <div class="list-item-left">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-white">
                             <li class="nav-item">
-                                <a class="nav-link active text-white" aria-current="page" href="#">Trang chủ</a>
+                                <a class="nav-link active text-white" aria-current="page" href="Home.php?isHome">Trang chủ</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Giới thiệu</a>
@@ -64,6 +61,10 @@
 
                         </ul>
                     </div>
+                    <div class="image-logo">
+                        <!-- <img src="../assets/images/logo_coffee.png" lt=""> -->
+                        <img src="https://s3-alpha-sig.figma.com/img/07a6/ba17/2ce4b94025b32b1fec0a34927f223d17?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=rQ9fDZ-pcqPGbOEiVRRjTT7udH9BsJPxcR9YzpIc07KYFlCan28-fjqpiQ5cdk24QTHinQmi2yJqtheKmiEIL-PuJdfVIoKvLb1jqAF5PTPk~bUNpwIryy1X~EOQQPon50fxY6ZeFk4wIpJeP4wpCCj9q~aoe8yuBmVJbk2ox3lidA0o~zxlf0oWxwFtaYtS7tj4ANVWs~eAip--elBdm0cXsDvYQqOdGmV6pF6CQ4p6JO0NRpX3w0Kl~mgBpeUSlkpQ05ext46f0s8DCnMZ8bPSJ0rbVSRv4gNYcEeRcrCtoj8Amm8NFmowuuS~K5ghfIpnaYAo29apWBUCcdwrSA__" alt="">
+                    </div>
                     <div class="list-item-right">
                         <ul class="navbar-nav  mb-2 mb-lg-0 ml-2">
                             <li class="nav-item">
@@ -80,12 +81,13 @@
                     </div>
                     <div class="search-cart d-flex justify-content-center align-items-center">
 
-                        <a href="#" class="btn-search position-relative"><i class="fa-solid fa-magnifying-glass"></i>
+                        <a href="#" class="btn-search"><i class="fa-solid fa-magnifying-glass"></i>
                         </a>
-                        <div class=" quantity-cart position-absolute">
-                            0
-                        </div>
-                        <a href="#" class="btn-cart"><i class="fa-solid fa-cart-shopping"></i></a>
+
+                        <a href="#" class="btn-cart position-relative">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <p class="quantity-cart position-absolute">0</p>
+                        </a>
                     </div>
 
                     <!-- <form class="d-flex" role="search">
