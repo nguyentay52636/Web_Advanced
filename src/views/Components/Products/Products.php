@@ -6,7 +6,7 @@
                 <h5 class="menu-div-h5  fs-4 mb-4 fw-bold text-dark">Xem món hôm nay</h5>
             </div>
             <div class="search-container">
-                <input type="text" class="search-input" placeholder="Tìm kiếm sản phẩm ">
+                <input type="text" class="search-input" placeholder="Tìm kiếm sản phẩm">
                 <i class="fas fa-search search-icon"></i>
             </div>
             <div class="btn-phantrang d-lg-flex justify-content-center m-5">

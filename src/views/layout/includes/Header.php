@@ -12,13 +12,19 @@
             </div>
             <div class="header-right">
                 <div class="my-2 mx-2 d-flex justify-content-center">
-                    <button class="btn btn-login my-2 my-sm-0 mx-2 " type="submit">
-                        <span>Đăng nhập</span>
-                    </button>
-                    <button class="btn btn-signup my-2 my-sm-0" type="submit">
+                    <a href="Home.php?login=true">
+                        <button class="btn btn-login my-2 my-sm-0 mx-2" type="submit">
+                            <span>Đăng nhập</span>
+                        </button>
+                        </button>
+                    </a>
 
-                        <span> Đăng ký</span>
-                    </button>
+                    <a href="Home.php?signup=true">
+                        <button class="btn btn-signup my-2 my-sm-0" type="submit">
+
+                            <span> Đăng ký</span>
+                        </button>
+                    </a>
                 </div>
             </div>
         </div>
