@@ -1,19 +1,6 @@
 <div class="bg-gray-100 font-sans">
     <div class="p-8">
-        <header class="flex justify-between items-center mb-6">
-            <div>
-                <h2 class="text-2xl font-semibold">Orders</h2>
-                <p class="text-sm text-gray-500">Home / Orders</p>
-            </div>
-            <div class="flex items-center">
-                <button class="text-gray-500 focus:outline-none mr-4">
-                    <i class="fas fa-th-large"></i>
-                </button>
-                <button class="text-gray-500 focus:outline-none">
-                    <i class="fas fa-bell"></i>
-                </button>
-            </div>
-        </header>
+
 
         <div class="flex justify-between items-center mb-6">
             <div class="flex items-center border rounded">

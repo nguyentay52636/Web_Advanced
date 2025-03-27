@@ -14,10 +14,9 @@ include __DIR__ . '/../../../admin/include/Header.php';
 
             <!-- Display -->
 
-            <!-- <?php
-#include __DIR__ . '/../../../admin/include/Product.php';
+            <?php
 include __DIR__ . '/../../../admin/include/Order.php';
-?> -->
+?>
 
 
         </main>

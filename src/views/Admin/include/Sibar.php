@@ -6,7 +6,7 @@
         </button>
     </div>
     <div class="flex items-center mb-6">
-        <img src="path/to/avatar.jpg" alt="Avatar" class="w-12 h-12 rounded-full mr-4">
+        <img src="#" alt="Avatar" class="w-12 h-12 rounded-full mr-4">
         <div>
             <span class="block text-sm font-semibold">Louis Carter</span>
             <span class="block text-xs text-gray-500">Administrator</span>
