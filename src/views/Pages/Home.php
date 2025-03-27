@@ -7,7 +7,7 @@
     <?php include '../Components/Products/Products.php'; ?>
     <?php include '../Components/Feature/Feature.php'; ?>
     <?php include '../layout/includes/Footer.php'; ?>
-    
+
     <?php include '../config/script.php'; ?>
 </body>
 
