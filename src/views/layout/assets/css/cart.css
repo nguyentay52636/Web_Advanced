@@ -190,3 +190,20 @@
 .search-icon:hover {
     color: rgb(231, 180, 90) !important;
 }
+.card__details-btn {
+  display: inline-block;
+  background-color: rgb(231, 180, 90);
+  color: #fff;
+  border-radius: 5px;
+  padding: 8px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin-bottom: 15px;
+}
+.card__details-btn:hover {
+  background-color: #b88b6f;
+  color: #fff;
+  text-decoration: none;
+}
