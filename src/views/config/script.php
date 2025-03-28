@@ -51,6 +51,38 @@
         });
     });
 </script>
+<script>
+    // Tab functionality
+    document.querySelectorAll('.tabSip').forEach(tab => {
+        tab.addEventListener('click', () => {
+            document.querySelectorAll('.tabSip').forEach(t => t.classList.remove('active'));
+            tab.classList.add('active');
+        });
+    });
+
+    // Coffee type button functionality
+    document.querySelectorAll('.flavorTwist').forEach(btn => {
+        btn.addEventListener('click', () => {
+            document.querySelectorAll('.flavorTwist').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+        });
+    });
+
+    // Quantity selector functionality
+    const quantityInput = document.querySelector('.cupCounter input');
+    if (quantityInput) {
+        document.querySelectorAll('.cupCounter button').forEach(btn => {
+            btn.addEventListener('click', () => {
+                let value = parseInt(quantityInput.value);
+                if (btn.textContent === '+') {
+                    quantityInput.value = value + 1;
+                } else if (btn.textContent === '-' && value > 1) {
+                    quantityInput.value = value - 1;
+                }
+            });
+        });
+    }
+</script>
 </script>
 <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
