@@ -12,7 +12,7 @@
             </div>
             <div class="header-right">
                 <div class="my-2 mx-2 d-flex justify-content-center">
-                    <a href="Home.php?login=true">
+                    <a href="../../../../src/views/Auth/LoginAndSignUp.php">
                         <span class="title-login">Đăng nhập </span>
                         <button class="btn btn-login my-2 my-sm-0 mx-2" type="submit">
                             <i class="fa-solid fa-user"></i>
@@ -34,7 +34,7 @@
                     <div class="list-item-left">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-white">
                             <li class="nav-item">
-                                <a class="nav-link active text-white" aria-current="page" href="Home.php?isHome">Trang chủ</a>
+                                <a class="nav-link active text-white" aria-current="page" href="../../../../src/views//Pages/Home.php">Trang chủ</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Giới thiệu</a>

@@ -10,7 +10,7 @@ DROP TABLE IF EXISTS `ACCOUNTS`;
 CREATE TABLE IF NOT EXISTS `ACCOUNTS` (
     ID                          INT             NOT NULL        AUTO_INCREMENT                 ,
     USENAME                     VARCHAR(50)     NOT NULL                                       ,
-    PASSWORD                    VARCHAR(50)     NOT NULL                                       ,
+    PASSWORD                    VARCHAR(255)     NOT NULL                                       ,
     PRIMARY KEY (ID)
 );
 
