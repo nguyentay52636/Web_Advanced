@@ -1,29 +1,29 @@
 <?php
-// Kiểm tra tham số trên URL để hiển thị nội dung phù hợp
-$page = isset($_GET['login']) ? 'login' : 'home';
-?>
 
+$page = isset($_GET['LoginAndSignUp']) ? 'LoginAndSignUp' : (isset($_GET['page']) ? $_GET['page'] : 'home');
+?>
 <!DOCTYPE html>
 <html lang="en">
-<?php include '../config/head.php'; ?>
+<?php require_once '../config/head.php' ?>
 
 <body>
     <?php include '../layout/includes/Header.php'; ?>
 
     <div class="main-content">
         <?php
-        if ($page === 'login') {
-            include '../Auth/LoginAndSignUp.php';
+        if ($page === 'product-details') {
+
+            include '../Components/Products/ProductDetails.php';
+            include '../layout/includes/Footer.php';
         } else {
             include '../Components/Banner/Banner.php';
             include '../Components/Products/Products.php';
             include '../Components/Feature/Feature.php';
+            include '../layout/includes/Footer.php';
         }
         ?>
     </div>
-
     <?php include '../config/script.php'; ?>
-    <?php include '../layout/includes/Footer.php'; ?>
 </body>
 
 </html>
