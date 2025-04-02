@@ -20,6 +20,7 @@ $(document).ready(function() {
     }
 });
 </script>
+
 </body>
 <script>
 // Tab functionality
@@ -75,6 +76,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 <?php endif; ?>
 </script>
+
 <script>
 const mithSignupButton = document.getElementById('mith-signup-btn');
 const lythLoginButton = document.getElementById('lyth-login-btn');
