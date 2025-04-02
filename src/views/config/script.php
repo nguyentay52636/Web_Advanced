@@ -21,6 +21,7 @@
         }
     });
 </script>
+
 </body>
 <script>
     // Tab functionality
@@ -76,6 +77,7 @@
         });
     <?php endif; ?>
 </script>
+
 <script>
     const mithSignupButton = document.getElementById('mith-signup-btn');
     const lythLoginButton = document.getElementById('lyth-login-btn');

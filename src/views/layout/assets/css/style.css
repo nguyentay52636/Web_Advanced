@@ -52,10 +52,7 @@ opacity: 2;
     
     }
     
-    .header-left span, .header-right a {
-      margin: 0 15px;
-      position: relative;
-    }
+ 
     
     /* Vertical separators */
     .header-left span:not(:last-child)::after,
@@ -538,4 +535,23 @@ rotate: 180deg;
 }
 a {
   text-decoration: none !important;
+}
+.dropdown-menu {
+  min-width: 150px;
+}
+.rounded-5 {
+  border-radius: 50%;
+}
+.dropdown {
+  cursor: pointer;
+
+}
+.dropdown .dropdown-toggle img:hover {
+opacity: 0.8;
+}
+.dropdown-menu .dropdown-item:hover {
+  cursor: pointer;
+  background-color:rgb(231, 180, 90);
+  color :white;
+  position: none !important;
 }
